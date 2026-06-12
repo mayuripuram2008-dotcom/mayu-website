@@ -57,6 +57,14 @@ a{
 a:hover{ 
     color:#facc15; 
 } 
+nav button{
+    transition: 0.5s;
+}
+nav button:hover {
+    background: #06b6d4;
+    transform: scale(1.05);
+
+}
  
 #home { 
     display: flex; 
@@ -67,7 +75,7 @@ a:hover{
     padding: 80px 50px; 
     width: 100vw; 
     margin-bottom: 20vh; 
- 
+   background: linear-gradient(to right ,#f8f9ff,#eef5ff);
 } 
 .left-div { 
     width: 50%; 
@@ -121,7 +129,10 @@ a:hover{
     border-radius: 50%; 
     border-right: #EC4899; 
     object-fit: cover; 
- 
+    transition: 0.5s;
+}
+.right-div img:hover{
+    transform: scale(1.08);
 } 
 #about { 
     display: flex; 
@@ -404,7 +415,42 @@ form buttton:hover {
 } 
 form button:hover { 
 background:#1e40af; 
+}
+#skills{
+    padding: 60px 20px;
+    text-align: center;
 } 
+#skills h1{
+    margin-bottom: 30px;
+}
+.SkillS-Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.Skills-card{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    border: 2px solid pink;
+    transform: 0.5s;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.Skills-card:hover{
+    transform: scale(1.2);
+}
+.Skills-card h3{
+    margin: 10px;
+    font-size: 24px;
+    
+    
+}
 @media (max-width:768px) {
 nav {
         flex-direction: column;
